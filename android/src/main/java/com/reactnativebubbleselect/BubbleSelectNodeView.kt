@@ -16,6 +16,7 @@ class BubbleSelectNodeView(context: ReactContext): LinearLayout(context) {
   var fontColor: String = "#ffffff"
   var color: String? = null
   var gradient: ReadableMap? = null
+  var radius: Int = 50
 
   init {
     inflate(context, R.layout.bubble_node, this)

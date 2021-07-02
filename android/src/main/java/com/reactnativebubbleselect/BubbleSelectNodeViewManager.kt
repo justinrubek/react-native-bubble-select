@@ -51,4 +51,10 @@ class BubbleSelectNodeViewManager: SimpleViewManager<BubbleSelectNodeView>() {
   fun setGradient(view: BubbleSelectNodeView, gradient: ReadableMap?) {
     view.gradient = gradient
   }
+
+  @ReactProp(name = "radius")
+  fun setRadius(view: BubbleSelectNodeView, radius: Int?) {
+    if (radius == null) return;
+    view.radius = radius
+  }
 }
