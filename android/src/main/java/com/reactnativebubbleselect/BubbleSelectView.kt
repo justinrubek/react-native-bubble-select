@@ -35,6 +35,7 @@ class BubbleSelectView(context: ReactContext): FrameLayout(context), LifecycleEv
           val node = nodes[position]
           title = node.text
           id = node.id
+          radius = node.radius
           if (node.fontFamily !== null) {
             typeface = Typeface.create(node.fontFamily, node.fontStyle)
           }
